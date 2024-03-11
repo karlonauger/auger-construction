@@ -1,27 +1,24 @@
 import 'bootstrap/dist/css/bootstrap.css';
 
 import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Navbar from './components/navbar';
-import Title from './components/title';
-import Projects from './components/projects';
-import About from './components/about';
+import Home from './components/home';
+import ProjectDetails from './components/projectDetails';
 import Footer from './components/footer';
-import useFetch from './hooks/useFetch';
 
 export default function App() {
-  const { loading, error, data } = useFetch('main-page?populate=*')
-
-  if (loading) return <p>Loading...</p>
-  if (error) return <p>Error fetching content</p>
-
   return (
     <div className="App">
-      <Navbar />
-      <Title data={data} />
-      <Projects />
-      <About data={data}/>
-      <Footer />
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects/:projectId" element={<ProjectDetails />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

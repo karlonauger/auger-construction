@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Contact from './contact';
 
@@ -14,9 +15,9 @@ export default function Navbar() {
       }}
     >
       <div className="container d-flex justify-content-between align-items-center">
-        <a className="navbar-brand pt-0 pb-0" href="/" style={{ width: '150px' }}>
+        <Link to="/" className="navbar-brand pt-0 pb-0 text-decoration-none" style={{ width: '150px' }}>
           <img className="img-fluid" src="/logo.png" alt="Auger Construction Logo" />
-        </a>
+        </Link>
         <Contact/>
       </div>
     </header>

@@ -12,15 +12,15 @@ export default function Title({ data }) {
 
   return (
     <div>
-      <Carousel interval={6000}>
+      <Carousel>
         {data.attributes.carouselPhotos.data.map((photo, index) => (
-          <Carousel.Item>
+          <Carousel.Item key={"carousel" + index}>
             <img
               className="d-block w-100 img-fluid"
               src={process.env.REACT_APP_API_URL + photo.attributes.url}
               alt={photo.attributes.name}
               style={{
-                height: 'calc(78vh - 48px)', // Subtract Header height
+                height: 'calc(82vh - 48px)', // Subtract Header height
                 display: 'flex',
                 alignItems: 'center',
                 objectFit: 'cover',
@@ -30,8 +30,8 @@ export default function Title({ data }) {
         ))}
       </Carousel>
       <div className="container text-center my-3 pt-1">
-        <h1 className="display-3 fw-bold">{data.attributes.title}</h1>
-        <h2 className="fw-normal">{data.attributes.subtitle}</h2>
+        <h1>{data.attributes.title}</h1>
+        <h4>{data.attributes.subtitle}</h4>
       </div>
     </div>
   );
