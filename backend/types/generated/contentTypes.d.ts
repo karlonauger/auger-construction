@@ -802,7 +802,7 @@ export interface ApiMainPageMainPage extends Schema.SingleType {
   attributes: {
     title: Attribute.String;
     subtitle: Attribute.String;
-    titlePhoto: Attribute.Media;
+    carouselPhotos: Attribute.Media;
     aboutTitle: Attribute.String;
     aboutDescription: Attribute.Text;
     aboutPhoto: Attribute.Media;

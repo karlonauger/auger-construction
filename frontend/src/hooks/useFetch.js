@@ -10,7 +10,6 @@ export default function useFetch(url) {
       setLoading(true);
 
       try {
-        console.log(process.env.REACT_APP_API_URL + "/api/" + url)
         const res = await fetch(process.env.REACT_APP_API_URL + "/api/" + url, {
           headers: {
             Authorization: `Bearer ${process.env.REACT_APP_API_TOKEN}`,
