@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Navbar from './navbar';
 import Title from './title';
 import Projects from './projects';
 import About from './about';
@@ -14,6 +16,7 @@ export default function Home() {
 
   return (
     <div>
+      <Navbar data={projects.data} />
       <Title data={data} />
       <Projects data={projects.data} />
       <About data={data} />

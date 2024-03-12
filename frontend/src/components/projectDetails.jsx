@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
+import Navbar from './navbar';
+
 import useFetch from '../hooks/useFetch';
 
 export default function ProjectDetails() {
@@ -15,10 +17,14 @@ export default function ProjectDetails() {
 
   return (
     <div>
-      <div className="container text-center my-3 pt-1">
-        <h1>{project.attributes.name}</h1>
-        <h4>{project.attributes.location}</h4>
-        <p>{project.attributes.description}</p>
+      <Navbar data={data} />
+      <div className="jumbotron bg-body-tertiary">
+        <div className="container text-center py-4">
+          <h1 className="text-body-emphasis">{project.attributes.name}</h1>
+          <p className="mx-auto fs-4 text-muted">{project.attributes.location}</p>
+          <hr class="my-4"></hr>
+          <p class="mx-auto text-muted">{project.attributes.description}</p>
+        </div>
       </div>
       <div id="projects" className="jumbotron">
       <div className="position-relative container my-5">

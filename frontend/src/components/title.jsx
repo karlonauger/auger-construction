@@ -29,9 +29,13 @@ export default function Title({ data }) {
           </Carousel.Item>
         ))}
       </Carousel>
-      <div className="container text-center my-3 pt-1">
-        <h1>{data.attributes.title}</h1>
-        <h4>{data.attributes.subtitle}</h4>
+      <div className="jumbotron bg-body-tertiary">
+        <div className="container text-center py-3">
+          <h1 className="text-body-emphasis">{data.attributes.title}</h1>
+          <p className="mx-auto fs-4 text-muted">{data.attributes.subtitle}</p>
+          <hr class="my-4"></hr>
+          <p class="mx-auto text-muted">Specializing in kitchen and bathroom renovations. Specializing in kitchen and bathroom renovations. Specializing in kitchen and bathroom renovations. Specializing in kitchen and bathroom renovations.</p>
+        </div>
       </div>
     </div>
   );
