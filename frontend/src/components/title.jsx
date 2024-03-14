@@ -2,13 +2,13 @@ import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 
 export default function Title({ data }) {
-  const woodColor = {
-    background: `url('/maple-wood.jpeg') no-repeat`,
-    backgroundSize: 'cover',
-    WebkitBackgroundClip: 'text',
-    color: 'transparent',
-    display: 'inline-block',
-  };
+  // const woodColor = {
+  //   background: `url('/maple-wood.jpeg') no-repeat`,
+  //   backgroundSize: 'cover',
+  //   WebkitBackgroundClip: 'text',
+  //   color: 'transparent',
+  //   display: 'inline-block',
+  // };
 
   return (
     <div>

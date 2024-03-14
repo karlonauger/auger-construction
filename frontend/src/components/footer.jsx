@@ -16,12 +16,11 @@ export default function Footer() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <footer className="container d-flex justify-content-between align-items-center border-top">
+      <footer className="container d-flex justify-content-between align-items-center pt-1 border-top">
         <div className="d-flex gap-2 align-items-center">
-          <a className="navbar-brand pt-0 pb-0" href="/" style={{ width: '30px' }}>
-            <img className="img-fluid" src="/logo_emblem.png" alt="Auger Construction Logo" />
+          <a className="navbar-brand pt-0 pb-0" href="/" style={{ width: '130px' }}>
+            <img className="img-fluid" src="/logo.png" alt="Auger Construction Logo" />
           </a>
-          <span className="ml-3 mr-2 text-white">© 2024 Auger Construction</span>
         </div>
         <Nav>
           <Phone/>
