@@ -7,7 +7,7 @@ import useFetch from '../hooks/useFetch';
 
 export default function ProjectDetails() {
   const { projectId } = useParams();
-  const { loading, error, data } = useFetch('projects?populate=*');
+  const { loading, error, data } = useFetch('/projects?populate=*');
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error :/</p>;

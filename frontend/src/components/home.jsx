@@ -8,8 +8,8 @@ import About from './about';
 import useFetch from '../hooks/useFetch';
 
 export default function Home() {
-  const { loading, error, data } = useFetch('main-page?populate=*')
-  const projects = useFetch('projects?populate=*');
+  const { loading, error, data } = useFetch('/main-page?populate=*')
+  const projects = useFetch('/projects?populate=*');
 
   if (loading || projects.loading) return <p>Loading...</p>
   if (error || projects.error) return <p>Error :/</p>
