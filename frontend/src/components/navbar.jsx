@@ -18,7 +18,7 @@ export default function Navbar({ data }) {
       }}
     >
       <div className="container d-flex justify-content-between align-items-center">
-        <Link to="/" className="navbar-brand pt-0 pb-0 text-decoration-none" style={{ width: '150px' }}>
+        <Link to="/" className="navbar-brand pt-0 pb-0 text-decoration-none" style={{ width: '180px' }}>
           <img className="img-fluid" src="/logo.png" alt="Auger Construction Logo" />
         </Link>
         <Nav>

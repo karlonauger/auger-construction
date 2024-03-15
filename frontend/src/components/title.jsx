@@ -33,8 +33,8 @@ export default function Title({ data }) {
         <div className="container text-center py-3">
           <h1 className="text-body-emphasis">{data.attributes.title}</h1>
           <p className="mx-auto fs-4 text-muted">{data.attributes.subtitle}</p>
-          <hr class="my-4"></hr>
-          <p class="mx-auto text-muted">{data.attributes.description}</p>
+          <hr className="my-4"></hr>
+          <p className="mx-auto text-muted">{data.attributes.description}</p>
         </div>
       </div>
     </div>

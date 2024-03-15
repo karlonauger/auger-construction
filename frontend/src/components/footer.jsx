@@ -18,7 +18,7 @@ export default function Footer() {
     >
       <footer className="container d-flex justify-content-between align-items-center pt-1 border-top">
         <div className="d-flex gap-2 align-items-center">
-          <a className="navbar-brand pt-0 pb-0" href="/" style={{ width: '130px' }}>
+          <a className="navbar-brand pt-0 pb-0" href="/" style={{ width: '150px' }}>
             <img className="img-fluid" src="/logo.png" alt="Auger Construction Logo" />
           </a>
         </div>
