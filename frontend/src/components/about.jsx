@@ -18,16 +18,9 @@ export default function About({ data }) {
             </div>
             <div className="col-md-6">
               <h1 className="text-body-emphasis">{data.attributes.aboutTitle}</h1>
-              <p className="mx-auto fs-4 text-muted">
-                {data.attributes.aboutDescription}
-              </p>
+              <p className="mx-auto fs-4 text-muted">{data.attributes.aboutSubtitle}</p>
               <hr className="my-4" />
-              <p className="mx-auto text-muted">
-                Specializing in kitchen and bathroom renovations.
-                Specializing in kitchen and bathroom renovations.
-                Specializing in kitchen and bathroom renovations.
-                Specializing in kitchen and bathroom renovations.
-              </p>
+              <p className="mx-auto text-muted">{data.attributes.aboutDescription}</p>
             </div>
           </div>
         </div>
