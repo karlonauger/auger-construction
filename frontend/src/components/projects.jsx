@@ -11,8 +11,8 @@ export default function Projects({ data }) {
               <Link to={`/projects/${project.attributes.slug}`} className="text-decoration-none">
                 <div className="card shadow-sm">
                   <img
-                    src={process.env.REACT_APP_API_URL + project.attributes.cover_image.data.attributes.url}
-                    alt={project.attributes.cover_image.data.attributes.name}
+                    src={project.attributes.coverPhoto.data.attributes.url}
+                    alt={project.attributes.coverPhoto.data.attributes.name}
                     className="card-img-top img-fluid"
                     width="100%"
                     style={{ maxHeight: '442px', objectFit: 'cover' }}

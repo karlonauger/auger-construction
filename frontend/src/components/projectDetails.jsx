@@ -29,16 +29,16 @@ export default function ProjectDetails() {
       <div id="projects" className="jumbotron">
       <div className="position-relative container my-5">
         <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2 g-3">
-          {project.attributes.images.data.map((image, index) => (
+          {project.attributes.photos.data.map((photo, index) => (
             <div key={"image" + index} className="col">
               <div className="card shadow-sm">
                 <img
-                  src={process.env.REACT_APP_API_URL + image.attributes.url}
-                  alt={image.attributes.name}
+                  src={photo.attributes.url}
+                  alt={photo.attributes.name}
                   className="card-img-top img-fluid"
                   width="100%"
                   style={{ maxHeight: '442px', objectFit: 'cover' }}
-                  aria-label={image.attributes.name}
+                  aria-label={photo.attributes.name}
                 />
               </div>
             </div>

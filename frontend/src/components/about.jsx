@@ -2,8 +2,6 @@ import React from 'react';
 
 export default function About({ data }) {
   const aboutPhoto = data.attributes.aboutPhoto.data;
-  const aboutPhotoSrc = process.env.REACT_APP_API_URL + aboutPhoto.attributes.url;
-  const aboutPhotoAlt = aboutPhoto.attributes.name;
 
   return (
     <div id="about" className="jumbotron bg-body-tertiary">
@@ -12,8 +10,8 @@ export default function About({ data }) {
           <div className="row">
             <div className="col-md-6 mb-3">
               <img
-                src={aboutPhotoSrc}
-                alt={aboutPhotoAlt}
+                src={aboutPhoto.attributes.url}
+                alt={aboutPhoto.attributes.name}
                 className="img-fluid rounded-3"
                 aria-label={data.attributes.aboutTitle}
               />
