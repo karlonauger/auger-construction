@@ -11,7 +11,7 @@ export default function Projects({ data }) {
               <Link to={`/projects/${project.attributes.slug}`} className="text-decoration-none">
                 <div className="card shadow-sm">
                   <img
-                    src={project.attributes.coverPhoto.data.attributes.url}
+                    src={project.attributes.coverPhoto.data.attributes.formats.medium.url}
                     alt={project.attributes.coverPhoto.data.attributes.name}
                     className="card-img-top img-fluid"
                     width="100%"
