@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Modal, Carousel, Button } from 'react-bootstrap';
+import { Modal, Carousel } from 'react-bootstrap';
 
 import Navbar from './navbar';
 
