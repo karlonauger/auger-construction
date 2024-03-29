@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, NavDropdown } from 'react-bootstrap';
 
+import Address from './address';
 import Phone from './phone';
 import Email from './email';
 import Facebook from './facebook';
@@ -18,10 +19,10 @@ export default function Navbar({ data }) {
       }}
     >
       <div className="container d-flex justify-content-between align-items-center">
-        <Link to="/" className="navbar-brand pt-0 pb-0 text-decoration-none" style={{ width: '180px' }}>
+        <Link to="/" className="navbar-brand pt-0 pb-0 text-decoration-none" style={{ width: '170px', flexShrink: '0' }}>
           <img className="img-fluid" src="/logo.png" alt="Auger Construction Logo" />
         </Link>
-        <Nav>
+        <Nav className="justify-content-end">
           <NavDropdown title="Projects">
             {data.map(project => (
               <NavDropdown.Item key={project.attributes.slug}>
@@ -34,6 +35,7 @@ export default function Navbar({ data }) {
               </NavDropdown.Item>
             ))}
           </NavDropdown>
+          <Address/>
           <Phone/>
           <Email/>
           <Facebook/>
